@@ -26,10 +26,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -41,18 +37,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-bb05f5d0074da2129d766b238819cd35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -70,6 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -83,7 +68,6 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Kathy Mok</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -108,12 +92,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/your-username"> <i class="bi bi-github" role="img" aria-label="GitHub">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/your-handle"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://github.com/mysourlemons90"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -135,6 +114,8 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#hi-im-kathy-mok" id="toc-hi-im-kathy-mok" class="nav-link active" data-scroll-target="#hi-im-kathy-mok">Hi, I’m Kathy Mok</a></li>
   <li><a href="#about-this-site" id="toc-about-this-site" class="nav-link" data-scroll-target="#about-this-site">About this site</a></li>
+  <li><a href="#a-little-about-me" id="toc-a-little-about-me" class="nav-link" data-scroll-target="#a-little-about-me">A little about me</a></li>
+  <li><a href="#travel-highlights-italy" id="toc-travel-highlights-italy" class="nav-link" data-scroll-target="#travel-highlights-italy">Travel highlights — Italy</a></li>
   <li><a href="#how-to-use-it" id="toc-how-to-use-it" class="nav-link" data-scroll-target="#how-to-use-it">How to use it</a></li>
   </ul>
 </nav>
@@ -166,25 +147,157 @@ ul.task-list li input[type="checkbox"] {
   border-radius: 50%;
   object-fit: cover;
 }
+/* ===== Simple carousel ===== */
+.carousel-wrap {
+  position: relative;
+  max-width: 700px;
+  margin: 12px auto;
+  padding: 0 60px;
+}
+.carousel-viewport {
+  overflow: hidden;
+  border-radius: 12px;
+}
+.carousel-track {
+  display: flex;
+  gap: 16px;
+  transition: transform 300ms ease;
+}
+.carousel-slide {
+  flex: 0 0 100%;
+}
+.carousel-slide img {
+  width: 100%;
+  aspect-ratio: 5 / 4;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+/* Buttons */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  padding: 12px 16px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-btn:hover {
+  background: rgba(0,0,0,0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+.carousel-btn.prev { left: 0; }
+.carousel-btn.next { right: 0; }
 </style>
 <div style="float:left; margin-right:20px;">
 <p><img src="images/profile.jpg" class="profile-pic" width="160" height="160"></p>
 </div>
 <section id="hi-im-kathy-mok" class="level2">
 <h2 class="anchored" data-anchor-id="hi-im-kathy-mok">Hi, I’m Kathy Mok</h2>
-<p>I’m an <strong>Applied Computing (FinTech)</strong> student at the <strong>Singapore Institute of Technology (SIT)</strong>.<br>
-I enjoy building practical, data-driven solutions and learning how to communicate technical work clearly.</p>
-<hr>
+<p>I’m an <strong>Applied Computing (FinTech)</strong> student at the <strong>Singapore Institute of Technology (SIT)</strong>.</p>
+<p>I enjoy building practical, data-driven solutions and learning how to communicate technical work clearly.</p>
+<div style="clear:both;">
+
+</div>
 </section>
 <section id="about-this-site" class="level2">
 <h2 class="anchored" data-anchor-id="about-this-site">About this site</h2>
-<p>This website was created for <strong>AI1001</strong> to showcase how to build and publish a personal site using <strong>Quarto</strong> and <strong>GitHub Pages</strong>.</p>
-<hr>
+<p>This website was created for <strong>AI1001</strong> to showcase how to build and publish a personal site using <strong>Quarto</strong> and <strong>GitHub Pages</strong>.<br>
+It documents both the process and outcomes of my coursework and projects.</p>
+</section>
+<section id="a-little-about-me" class="level2">
+<h2 class="anchored" data-anchor-id="a-little-about-me">A little about me</h2>
+<p>Outside of academics, I enjoy <strong>discovering new music</strong> and <strong>travelling</strong>.</p>
+<p>My favourite country to visit is <strong>Italy</strong>, where I enjoy the culture, food, architecture, and overall atmosphere.</p>
+</section>
+<section id="travel-highlights-italy" class="level2">
+<h2 class="anchored" data-anchor-id="travel-highlights-italy">Travel highlights — Italy</h2>
+<div class="carousel-wrap" id="italyCarousel">
+  <button class="carousel-btn prev" type="button">‹</button>
+  <div class="carousel-viewport">
+    <div class="carousel-track">
+      <div class="carousel-slide">
+        <img src="images/italy1.jpg" alt="Italy photo 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="images/italy2.jpg" alt="Italy photo 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="images/italy3.jpg" alt="Italy photo 3">
+      </div>
+      <div class="carousel-slide">
+        <img src="images/italy4.jpg" alt="Italy photo 4">
+      </div>
+    </div>
+  </div>
+  <button class="carousel-btn next" type="button">›</button>
+</div>
+<script>
+(function () {
+  const root = document.getElementById("italyCarousel");
+  if (!root) return;
+  
+  const track = root.querySelector(".carousel-track");
+  const slides = root.querySelectorAll(".carousel-slide");
+  const prev = root.querySelector(".prev");
+  const next = root.querySelector(".next");
+  
+  let index = 0;
+  const gap = 16;
+  
+  function update() {
+    if (slides.length === 0) return;
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    track.style.transform = `translateX(${-index * (slideWidth + gap)}px)`;
+    
+    // Disable buttons at boundaries
+    prev.style.opacity = index === 0 ? '0.3' : '1';
+    prev.style.cursor = index === 0 ? 'default' : 'pointer';
+    next.style.opacity = index === slides.length - 1 ? '0.3' : '1';
+    next.style.cursor = index === slides.length - 1 ? 'default' : 'pointer';
+  }
+  
+  prev.addEventListener("click", () => {
+    if (index > 0) {
+      index--;
+      update();
+    }
+  });
+  
+  next.addEventListener("click", () => {
+    if (index < slides.length - 1) {
+      index++;
+      update();
+    }
+  });
+  
+  // Better resize handling with debounce
+  let resizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(update, 100);
+  });
+  
+  // Initialize
+  setTimeout(update, 100);
+})();
+</script>
 </section>
 <section id="how-to-use-it" class="level2">
 <h2 class="anchored" data-anchor-id="how-to-use-it">How to use it</h2>
-<p>Use the navigation bar above to explore the other pages.<br>
-If you’re viewing this for assessment, you can follow the pages in order to see the build process and outputs.</p>
+<p>Use the navigation bar above to explore the other pages.</p>
+<p>If you’re viewing this site for assessment, you can follow the pages in order to see the build process, design decisions, and final outputs.</p>
 
 
 </section>

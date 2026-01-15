@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>/index.html</loc>
-    <lastmod>2026-01-15T02:55:32.863Z</lastmod>
+    <lastmod>2026-01-15T05:42:59.412Z</lastmod>
   </url>
   <url>
     <loc>/fyp.html</loc>
-    <lastmod>2026-01-15T02:56:22.312Z</lastmod>
+    <lastmod>2026-01-15T05:58:09.822Z</lastmod>
+  </url>
+  <url>
+    <loc>/data-visualisation.html</loc>
+    <lastmod>2026-01-15T05:08:40.820Z</lastmod>
+  </url>
+  <url>
+    <loc>/reflection.html</loc>
+    <lastmod>2026-01-15T06:00:56.882Z</lastmod>
   </url>
 </urlset>

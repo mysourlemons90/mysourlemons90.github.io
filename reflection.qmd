@@ -8,9 +8,7 @@ I used Claude as a GenAI tool to support me in completing this assessment.
 
 ## How GenAI helped me
 
-it helped me understand how to create and configure a Quarto website, including setting up the project structure and rendering pages correctly for GitHub Pages.
-
-It was also useful in troubleshooting technical issues related to Git and GitHub, such as resolving push errors.
+It helped me understand how to create certain aspects of the website such as gallery carousel, and teaching me how to change the style of the website
 
 ## Benefits of using GenAI
 

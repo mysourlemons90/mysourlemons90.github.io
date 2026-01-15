@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Home",
+    "title": "Kathy Mok",
     "section": "",
-    "text": "I’m an Applied Computing (FinTech) student at the Singapore Institute of Technology (SIT).\nI enjoy building practical, data-driven solutions and learning how to communicate technical work clearly."
+    "text": "title: “Home”\n\n\nShow Image{width=200px height=200px .profile-pic}\n\n\nHi, I’m Kathy Mok 👋 I’m an Applied Computing (FinTech) student at the Singapore Institute of Technology (SIT). I enjoy building practical, data-driven solutions and learning how to communicate technical work clearly.\n\n\n📚 About this site This website was created for AI1001 to showcase how to build and publish a personal site using Quarto and GitHub Pages. It demonstrates clean design, responsive layout, and professional presentation of academic work.\n\n\n🧭 How to use it Use the navigation bar above to explore the other pages. If you’re viewing this for assessment, you can follow the pages in order to see the build process and outputs.\n\n\nBuilt with Quarto • Hosted on GitHub Pages"
   },
   {
     "objectID": "about.html",
@@ -137,7 +137,7 @@
     "href": "reflection.html#how-genai-helped-me",
     "title": "Reflection on the use of GenAI",
     "section": "How GenAI helped me",
-    "text": "How GenAI helped me\nit helped me understand how to create and configure a Quarto website, including setting up the project structure and rendering pages correctly for GitHub Pages.\nIt was also useful in troubleshooting technical issues related to Git and GitHub, such as resolving push errors."
+    "text": "How GenAI helped me\nIt helped me understand how to create certain aspects of the website such as gallery carousel, and teaching me how to change the style of the website"
   },
   {
     "objectID": "reflection.html#benefits-of-using-genai",
@@ -178,43 +178,43 @@
     "objectID": "fyp.html#introduction",
     "href": "fyp.html#introduction",
     "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
-    "section": "2 1. Introduction",
-    "text": "2 1. Introduction\nCTR prediction is a core task in recommender systems. Traditional CTR models handle structured data well but lack reasoning capabilities, while LLMs excel at reasoning but expect text input. Bridging this gap remains a challenge.\n\n2.1 1.1 Problem Statement\nPrompt-based LLM CTR methods suffer from: - Context-length limits that truncate user histories - Weak preservation of feature interactions when using text\n\n\n2.2 1.2 Objectives\nThis project aims to: - Avoid textual conversion of CTR features - Encode features as dense latent representations - Project these representations into the LLM embedding space - Evaluate performance on a standard CTR dataset"
+    "section": "2 Introduction",
+    "text": "2 Introduction\nCTR prediction is a core task in recommender systems. Traditional CTR models handle structured data well but lack reasoning capabilities, while LLMs excel at reasoning but expect text input. Bridging this gap remains a challenge.\n\n2.1 Problem Statement\nPrompt-based LLM CTR methods suffer from: - Context-length limits that truncate user histories - Weak preservation of feature interactions when using text\n\n\n2.2 Objectives\nThis project aims to: - Avoid textual conversion of CTR features - Encode features as dense latent representations - Project these representations into the LLM embedding space - Evaluate performance on a standard CTR dataset"
   },
   {
     "objectID": "fyp.html#methodology",
     "href": "fyp.html#methodology",
     "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
-    "section": "3 2. Methodology",
-    "text": "3 2. Methodology\nUser features are first compressed using an SFG-inspired encoder to capture feature interactions. An MLP projector then maps the compressed features into the LLM embedding space. These projected embeddings are concatenated with a short task prompt and processed by the LLM for CTR prediction."
+    "section": "3 Methodology",
+    "text": "3 Methodology\nUser features are first compressed using an SFG-inspired encoder to capture feature interactions. An MLP projector then maps the compressed features into the LLM embedding space. These projected embeddings are concatenated with a short task prompt and processed by the LLM for CTR prediction."
   },
   {
     "objectID": "fyp.html#dataset",
     "href": "fyp.html#dataset",
     "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
-    "section": "4 3. Dataset",
-    "text": "4 3. Dataset\nThe Avazu CTR dataset is used. Features are normalised into a fixed schema of 21 categorical fields and a binary click label. Missing values are padded to ensure consistent input dimensions."
+    "section": "4 Dataset",
+    "text": "4 Dataset\nThe Avazu CTR dataset is used. Features are normalised into a fixed schema of 21 categorical fields and a binary click label. Missing values are padded to ensure consistent input dimensions."
   },
   {
     "objectID": "fyp.html#experiments",
     "href": "fyp.html#experiments",
     "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
-    "section": "5 4. Experiments",
-    "text": "5 4. Experiments\nExperiments are conducted using Qwen LLMs (0.6B and 1.7B parameters) under different training strategies. Models are evaluated using AUC and log loss."
+    "section": "5 Experiments",
+    "text": "5 Experiments\nExperiments are conducted using Qwen LLMs (0.6B and 1.7B parameters) under different training strategies. Models are evaluated using AUC and log loss."
   },
   {
     "objectID": "fyp.html#results",
     "href": "fyp.html#results",
     "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
-    "section": "6 5. Results",
-    "text": "6 5. Results\nThe best-performing configuration is the 0.6B model trained end-to-end, achieving competitive results compared to generative CTR baselines, while requiring no feature textualisation."
+    "section": "6 Results",
+    "text": "6 Results\nThe best-performing configuration is the 0.6B model trained end-to-end, achieving competitive results compared to generative CTR baselines, while requiring no feature textualisation."
   },
   {
     "objectID": "fyp.html#conclusion",
     "href": "fyp.html#conclusion",
     "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
-    "section": "7 6. Conclusion",
-    "text": "7 6. Conclusion\nThis project demonstrates that LLMs can be applied to CTR prediction using dense projected tabular features. The results suggest that dense feature projection is a viable alternative to prompt-based approaches and provides a foundation for future LLM-based recommender systems."
+    "section": "7 Conclusion",
+    "text": "7 Conclusion\nThis project demonstrates that LLMs can be applied to CTR prediction using dense projected tabular features. The results suggest that dense feature projection is a viable alternative to prompt-based approaches and provides a foundation for future LLM-based recommender systems."
   },
   {
     "objectID": "index.html#hi-im-kathy-mok",
@@ -228,13 +228,27 @@
     "href": "index.html#about-this-site",
     "title": "Home",
     "section": "About this site",
-    "text": "About this site\nThis website was created for AI1001 to showcase how to build and publish a personal site using Quarto and GitHub Pages."
+    "text": "About this site\nThis website was created for AI1001 to showcase how to build and publish a personal site using Quarto and GitHub Pages.\nIt documents both the process and outcomes of my coursework and projects."
   },
   {
     "objectID": "index.html#how-to-use-it",
     "href": "index.html#how-to-use-it",
     "title": "Home",
     "section": "How to use it",
-    "text": "How to use it\nUse the navigation bar above to explore the other pages.\nIf you’re viewing this for assessment, you can follow the pages in order to see the build process and outputs."
+    "text": "How to use it\nUse the navigation bar above to explore the other pages.\nIf you’re viewing this site for assessment, you can follow the pages in order to see the build process, design decisions, and final outputs."
+  },
+  {
+    "objectID": "index.html#a-little-about-me",
+    "href": "index.html#a-little-about-me",
+    "title": "Home",
+    "section": "A little about me",
+    "text": "A little about me\nOutside of academics, I enjoy discovering new music and travelling.\nMy favourite country to visit is Italy, where I enjoy the culture, food, architecture, and overall atmosphere."
+  },
+  {
+    "objectID": "index.html#travel-highlights-italy",
+    "href": "index.html#travel-highlights-italy",
+    "title": "Home",
+    "section": "Travel highlights — Italy",
+    "text": "Travel highlights — Italy\n\n  ‹\n  \n    \n      \n        \n      \n      \n        \n      \n      \n        \n      \n      \n        \n      \n    \n  \n  ›"
   }
 ]

@@ -1,5 +1,96 @@
+/* Simple elegant theme */
 body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
+  background-color: #e8e4dc;
+  color: #2d3436;
+  font-family: 'Georgia', serif;
   line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #2d3436;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+}
+
+/* Links */
+a {
+  color: #142C14;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #0d1f0d;
+}
+
+/* Navigation bar */
+.navbar {
+  background-color: #e8e4dc !important;
+  border-bottom: 1px solid #d0ccc4;
+  padding: 1.5rem 0;
+}
+
+.navbar-brand {
+  color: #2d3436 !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+  color: #2d3436 !important;
+  font-size: 0.95rem;
+  margin: 0 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #142C14 !important;
+}
+
+.navbar-nav .nav-link.active {
+  color: #142C14 !important;
+}
+
+/* Profile section */
+.profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Horizontal rules */
+hr {
+  border: 0;
+  height: 1px;
+  background: #d0ccc4;
+  margin: 2rem 0;
+}
+
+/* Content area */
+#quarto-content {
+  background-color: #e8e4dc;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #e8e4dc !important;
+  border-left: 1px solid #d0ccc4;
+}
+
+.sidebar nav a {
+  color: #2d3436 !important;
+}
+
+.sidebar nav a:hover {
+  color: #142C14 !important;
 }

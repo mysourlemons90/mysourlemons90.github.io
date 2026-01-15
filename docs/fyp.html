@@ -28,10 +28,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -43,18 +39,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-bb05f5d0074da2129d766b238819cd35.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 50,
-  "keyboard-shortcut": [
-    "f",
-    "/",
-    "s"
-  ],
-  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -72,6 +56,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -85,7 +70,6 @@ ul.task-list li input[type="checkbox"] {
     <span class="navbar-title">Kathy Mok</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -110,12 +94,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/your-username"> <i class="bi bi-github" role="img" aria-label="GitHub">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/in/your-handle"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+    <a class="nav-link" href="https://github.com/mysourlemons90"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -136,18 +115,18 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">1</span> Abstract</a></li>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> 1. Introduction</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> Introduction</a>
   <ul class="collapse">
-  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement"><span class="header-section-number">2.1</span> 1.1 Problem Statement</a></li>
-  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">2.2</span> 1.2 Objectives</a></li>
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement"><span class="header-section-number">2.1</span> Problem Statement</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">2.2</span> Objectives</a></li>
   </ul></li>
-  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology"><span class="header-section-number">3</span> 2. Methodology</a></li>
-  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset"><span class="header-section-number">4</span> 3. Dataset</a></li>
-  <li><a href="#experiments" id="toc-experiments" class="nav-link" data-scroll-target="#experiments"><span class="header-section-number">5</span> 4. Experiments</a></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">6</span> 5. Results</a></li>
-  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7</span> 6. Conclusion</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology"><span class="header-section-number">3</span> Methodology</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset"><span class="header-section-number">4</span> Dataset</a></li>
+  <li><a href="#experiments" id="toc-experiments" class="nav-link" data-scroll-target="#experiments"><span class="header-section-number">5</span> Experiments</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">6</span> Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7</span> Conclusion</a></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="fyp.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
@@ -188,35 +167,35 @@ ul.task-list li input[type="checkbox"] {
 <p>Large Language Models (LLMs) are effective at reasoning but are not designed for structured tabular data used in click-through rate (CTR) prediction. Existing approaches rely on converting features into text prompts, leading to information loss and context-length constraints. This project proposes a <strong>Dense Feature Projection</strong> approach inspired by LLaVA, where compressed user features are projected directly into the LLM embedding space as dense tokens. Experiments on the Avazu dataset show that a compact 0.6B LLM achieves competitive CTR performance without textualising input features.</p>
 </section>
 <section id="introduction" class="level2" data-number="2">
-<h2 data-number="2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2</span> 1. Introduction</h2>
+<h2 data-number="2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2</span> Introduction</h2>
 <p>CTR prediction is a core task in recommender systems. Traditional CTR models handle structured data well but lack reasoning capabilities, while LLMs excel at reasoning but expect text input. Bridging this gap remains a challenge.</p>
 <section id="problem-statement" class="level3" data-number="2.1">
-<h3 data-number="2.1" class="anchored" data-anchor-id="problem-statement"><span class="header-section-number">2.1</span> 1.1 Problem Statement</h3>
+<h3 data-number="2.1" class="anchored" data-anchor-id="problem-statement"><span class="header-section-number">2.1</span> Problem Statement</h3>
 <p>Prompt-based LLM CTR methods suffer from: - Context-length limits that truncate user histories - Weak preservation of feature interactions when using text</p>
 </section>
 <section id="objectives" class="level3" data-number="2.2">
-<h3 data-number="2.2" class="anchored" data-anchor-id="objectives"><span class="header-section-number">2.2</span> 1.2 Objectives</h3>
+<h3 data-number="2.2" class="anchored" data-anchor-id="objectives"><span class="header-section-number">2.2</span> Objectives</h3>
 <p>This project aims to: - Avoid textual conversion of CTR features - Encode features as dense latent representations - Project these representations into the LLM embedding space - Evaluate performance on a standard CTR dataset</p>
 </section>
 </section>
 <section id="methodology" class="level2" data-number="3">
-<h2 data-number="3" class="anchored" data-anchor-id="methodology"><span class="header-section-number">3</span> 2. Methodology</h2>
+<h2 data-number="3" class="anchored" data-anchor-id="methodology"><span class="header-section-number">3</span> Methodology</h2>
 <p>User features are first compressed using an SFG-inspired encoder to capture feature interactions. An MLP projector then maps the compressed features into the LLM embedding space. These projected embeddings are concatenated with a short task prompt and processed by the LLM for CTR prediction.</p>
 </section>
 <section id="dataset" class="level2" data-number="4">
-<h2 data-number="4" class="anchored" data-anchor-id="dataset"><span class="header-section-number">4</span> 3. Dataset</h2>
+<h2 data-number="4" class="anchored" data-anchor-id="dataset"><span class="header-section-number">4</span> Dataset</h2>
 <p>The Avazu CTR dataset is used. Features are normalised into a fixed schema of 21 categorical fields and a binary click label. Missing values are padded to ensure consistent input dimensions.</p>
 </section>
 <section id="experiments" class="level2" data-number="5">
-<h2 data-number="5" class="anchored" data-anchor-id="experiments"><span class="header-section-number">5</span> 4. Experiments</h2>
+<h2 data-number="5" class="anchored" data-anchor-id="experiments"><span class="header-section-number">5</span> Experiments</h2>
 <p>Experiments are conducted using Qwen LLMs (0.6B and 1.7B parameters) under different training strategies. Models are evaluated using AUC and log loss.</p>
 </section>
 <section id="results" class="level2" data-number="6">
-<h2 data-number="6" class="anchored" data-anchor-id="results"><span class="header-section-number">6</span> 5. Results</h2>
+<h2 data-number="6" class="anchored" data-anchor-id="results"><span class="header-section-number">6</span> Results</h2>
 <p>The best-performing configuration is the 0.6B model trained end-to-end, achieving competitive results compared to generative CTR baselines, while requiring no feature textualisation.</p>
 </section>
 <section id="conclusion" class="level2" data-number="7">
-<h2 data-number="7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7</span> 6. Conclusion</h2>
+<h2 data-number="7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7</span> Conclusion</h2>
 <p>This project demonstrates that LLMs can be applied to CTR prediction using dense projected tabular features. The results suggest that dense feature projection is a viable alternative to prompt-based approaches and provides a foundation for future LLM-based recommender systems.</p>
 
 

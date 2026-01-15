@@ -5,6 +5,7 @@ project:
 website:
   title: "Kathy Mok"
   site-url: ""
+  search: false
   navbar:
     left:
       - href: index.qmd
@@ -17,11 +18,8 @@ website:
         text: Reflection
     right:
       - icon: github
-        href: https://github.com/your-username
+        href: https://github.com/mysourlemons90
         aria-label: GitHub
-      - icon: linkedin
-        href: https://www.linkedin.com/in/your-handle
-        aria-label: LinkedIn
 
   page-footer:
     left: "© 2026 Kathy Mok"
@@ -30,6 +28,7 @@ website:
 format:
   html:
     theme: cosmo
+    css: styles.css 
     toc: true
     toc-location: right
     toc-depth: 3

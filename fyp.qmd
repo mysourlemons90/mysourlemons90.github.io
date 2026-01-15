@@ -8,9 +8,6 @@ format:
     toc: true
     number-sections: true
     theme: cosmo
-  pdf:
-    toc: true
-    number-sections: true
 execute:
   echo: false
   warning: false
@@ -21,34 +18,34 @@ execute:
 
 Large Language Models (LLMs) are effective at reasoning but are not designed for structured tabular data used in click-through rate (CTR) prediction. Existing approaches rely on converting features into text prompts, leading to information loss and context-length constraints. This project proposes a **Dense Feature Projection** approach inspired by LLaVA, where compressed user features are projected directly into the LLM embedding space as dense tokens. Experiments on the Avazu dataset show that a compact 0.6B LLM achieves competitive CTR performance without textualising input features.
 
-## 1. Introduction
+## Introduction
 
 CTR prediction is a core task in recommender systems. Traditional CTR models handle structured data well but lack reasoning capabilities, while LLMs excel at reasoning but expect text input. Bridging this gap remains a challenge.
 
-### 1.1 Problem Statement
+### Problem Statement
 
 Prompt-based LLM CTR methods suffer from: - Context-length limits that truncate user histories - Weak preservation of feature interactions when using text
 
-### 1.2 Objectives
+### Objectives
 
 This project aims to: - Avoid textual conversion of CTR features - Encode features as dense latent representations - Project these representations into the LLM embedding space - Evaluate performance on a standard CTR dataset
 
-## 2. Methodology
+## Methodology
 
 User features are first compressed using an SFG-inspired encoder to capture feature interactions. An MLP projector then maps the compressed features into the LLM embedding space. These projected embeddings are concatenated with a short task prompt and processed by the LLM for CTR prediction.
 
-## 3. Dataset
+## Dataset
 
 The Avazu CTR dataset is used. Features are normalised into a fixed schema of 21 categorical fields and a binary click label. Missing values are padded to ensure consistent input dimensions.
 
-## 4. Experiments
+## Experiments
 
 Experiments are conducted using Qwen LLMs (0.6B and 1.7B parameters) under different training strategies. Models are evaluated using AUC and log loss.
 
-## 5. Results
+## Results
 
 The best-performing configuration is the 0.6B model trained end-to-end, achieving competitive results compared to generative CTR baselines, while requiring no feature textualisation.
 
-## 6. Conclusion
+## Conclusion
 
 This project demonstrates that LLMs can be applied to CTR prediction using dense projected tabular features. The results suggest that dense feature projection is a viable alternative to prompt-based approaches and provides a foundation for future LLM-based recommender systems.
