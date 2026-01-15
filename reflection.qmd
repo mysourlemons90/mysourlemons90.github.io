@@ -1,0 +1,21 @@
+---
+title: "Reflection on the use of GenAI"
+---
+
+## GenAI tool used
+
+I used Claude as a GenAI tool to support me in completing this assessment.
+
+## How GenAI helped me
+
+it helped me understand how to create and configure a Quarto website, including setting up the project structure and rendering pages correctly for GitHub Pages.
+
+It was also useful in troubleshooting technical issues related to Git and GitHub, such as resolving push errors.
+
+## Benefits of using GenAI
+
+Using GenAI reduced the time spent on technical difficulties and helped me focus more on understanding the workflow and requirements of the assessment. It also improved the clarity and organisation of my website content.
+
+## Future use of GenAI
+
+In the future, I believe GenAI can support my studies and work by assisting with debugging, learning new tools, and improving documentation. However, it should be used responsibly, with careful validation of outputs.

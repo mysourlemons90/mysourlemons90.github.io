@@ -1,11 +1,32 @@
 ---
-title: "temp_website"
+title: "Home"
 ---
 
-This is a Quarto website.
+<style>
+.profile-pic {
+  border-radius: 50%;
+  object-fit: cover;
+}
+</style>
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+::: {style="float:left; margin-right:20px;"}
+![](images/profile.jpg){width=160px height=160px .profile-pic}
+:::
 
-```{r}
-1 + 1
-```
+## Hi, I’m Kathy Mok 
+
+I’m an **Applied Computing (FinTech)** student at the **Singapore Institute of Technology (SIT)**.\
+I enjoy building practical, data-driven solutions and learning how to communicate technical work clearly.
+
+------------------------------------------------------------------------
+
+## About this site
+
+This website was created for **AI1001** to showcase how to build and publish a personal site using **Quarto** and **GitHub Pages**.
+
+------------------------------------------------------------------------
+
+## How to use it
+
+Use the navigation bar above to explore the other pages.\
+If you’re viewing this for assessment, you can follow the pages in order to see the build process and outputs.

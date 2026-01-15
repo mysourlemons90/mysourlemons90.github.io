@@ -3,20 +3,38 @@ project:
   output-dir: docs
 
 website:
-  title: "temp_website"
+  title: "Kathy Mok"
+  site-url: ""
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: fyp.qmd
+        text: FYP
+      - href: data-visualisation.qmd
+        text: Data Visualisation
+      - href: reflection.qmd
+        text: Reflection
+    right:
+      - icon: github
+        href: https://github.com/your-username
+        aria-label: GitHub
+      - icon: linkedin
+        href: https://www.linkedin.com/in/your-handle
+        aria-label: LinkedIn
+
+  page-footer:
+    left: "© 2026 Kathy Mok"
+    right: "Built with Quarto • Hosted on GitHub Pages"
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    theme: cosmo
     toc: true
-
-editor: visual
-
+    toc-location: right
+    toc-depth: 3
+    smooth-scroll: true
+    link-external-icon: true
+    link-external-newwindow: true
+    page-layout: full
+    code-copy: true

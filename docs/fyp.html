@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Kathy Mok Kai Ting">
+<meta name="dcterms.date" content="2026-01-15">
 
-<title>Home – Kathy Mok</title>
+<title>LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction – Kathy Mok</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -90,11 +92,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./fyp.html"> 
+    <a class="nav-link active" href="./fyp.html" aria-current="page"> 
 <span class="menu-text">FYP</span></a>
   </li>  
   <li class="nav-item">
@@ -133,25 +135,45 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hi-im-kathy-mok" id="toc-hi-im-kathy-mok" class="nav-link active" data-scroll-target="#hi-im-kathy-mok">Hi, I’m Kathy Mok</a></li>
-  <li><a href="#about-this-site" id="toc-about-this-site" class="nav-link" data-scroll-target="#about-this-site">About this site</a></li>
-  <li><a href="#how-to-use-it" id="toc-how-to-use-it" class="nav-link" data-scroll-target="#how-to-use-it">How to use it</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">1</span> Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction"><span class="header-section-number">2</span> 1. Introduction</a>
+  <ul class="collapse">
+  <li><a href="#problem-statement" id="toc-problem-statement" class="nav-link" data-scroll-target="#problem-statement"><span class="header-section-number">2.1</span> 1.1 Problem Statement</a></li>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives"><span class="header-section-number">2.2</span> 1.2 Objectives</a></li>
+  </ul></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology"><span class="header-section-number">3</span> 2. Methodology</a></li>
+  <li><a href="#dataset" id="toc-dataset" class="nav-link" data-scroll-target="#dataset"><span class="header-section-number">4</span> 3. Dataset</a></li>
+  <li><a href="#experiments" id="toc-experiments" class="nav-link" data-scroll-target="#experiments"><span class="header-section-number">5</span> 4. Experiments</a></li>
+  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results"><span class="header-section-number">6</span> 5. Results</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><span class="header-section-number">7</span> 6. Conclusion</a></li>
   </ul>
-</nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="fyp.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Home</h1>
+<h1 class="title">LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction</h1>
 </div>
 
 
 
 <div class="quarto-title-meta column-page-left">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Kathy Mok Kai Ting </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 15, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -161,30 +183,41 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<style>
-.profile-pic {
-  border-radius: 50%;
-  object-fit: cover;
-}
-</style>
-<div style="float:left; margin-right:20px;">
-<p><img src="images/profile.jpg" class="profile-pic" width="160" height="160"></p>
-</div>
-<section id="hi-im-kathy-mok" class="level2">
-<h2 class="anchored" data-anchor-id="hi-im-kathy-mok">Hi, I’m Kathy Mok</h2>
-<p>I’m an <strong>Applied Computing (FinTech)</strong> student at the <strong>Singapore Institute of Technology (SIT)</strong>.<br>
-I enjoy building practical, data-driven solutions and learning how to communicate technical work clearly.</p>
-<hr>
+<section id="abstract" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">1</span> Abstract</h2>
+<p>Large Language Models (LLMs) are effective at reasoning but are not designed for structured tabular data used in click-through rate (CTR) prediction. Existing approaches rely on converting features into text prompts, leading to information loss and context-length constraints. This project proposes a <strong>Dense Feature Projection</strong> approach inspired by LLaVA, where compressed user features are projected directly into the LLM embedding space as dense tokens. Experiments on the Avazu dataset show that a compact 0.6B LLM achieves competitive CTR performance without textualising input features.</p>
 </section>
-<section id="about-this-site" class="level2">
-<h2 class="anchored" data-anchor-id="about-this-site">About this site</h2>
-<p>This website was created for <strong>AI1001</strong> to showcase how to build and publish a personal site using <strong>Quarto</strong> and <strong>GitHub Pages</strong>.</p>
-<hr>
+<section id="introduction" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2</span> 1. Introduction</h2>
+<p>CTR prediction is a core task in recommender systems. Traditional CTR models handle structured data well but lack reasoning capabilities, while LLMs excel at reasoning but expect text input. Bridging this gap remains a challenge.</p>
+<section id="problem-statement" class="level3" data-number="2.1">
+<h3 data-number="2.1" class="anchored" data-anchor-id="problem-statement"><span class="header-section-number">2.1</span> 1.1 Problem Statement</h3>
+<p>Prompt-based LLM CTR methods suffer from: - Context-length limits that truncate user histories - Weak preservation of feature interactions when using text</p>
 </section>
-<section id="how-to-use-it" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-it">How to use it</h2>
-<p>Use the navigation bar above to explore the other pages.<br>
-If you’re viewing this for assessment, you can follow the pages in order to see the build process and outputs.</p>
+<section id="objectives" class="level3" data-number="2.2">
+<h3 data-number="2.2" class="anchored" data-anchor-id="objectives"><span class="header-section-number">2.2</span> 1.2 Objectives</h3>
+<p>This project aims to: - Avoid textual conversion of CTR features - Encode features as dense latent representations - Project these representations into the LLM embedding space - Evaluate performance on a standard CTR dataset</p>
+</section>
+</section>
+<section id="methodology" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="methodology"><span class="header-section-number">3</span> 2. Methodology</h2>
+<p>User features are first compressed using an SFG-inspired encoder to capture feature interactions. An MLP projector then maps the compressed features into the LLM embedding space. These projected embeddings are concatenated with a short task prompt and processed by the LLM for CTR prediction.</p>
+</section>
+<section id="dataset" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="dataset"><span class="header-section-number">4</span> 3. Dataset</h2>
+<p>The Avazu CTR dataset is used. Features are normalised into a fixed schema of 21 categorical fields and a binary click label. Missing values are padded to ensure consistent input dimensions.</p>
+</section>
+<section id="experiments" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="experiments"><span class="header-section-number">5</span> 4. Experiments</h2>
+<p>Experiments are conducted using Qwen LLMs (0.6B and 1.7B parameters) under different training strategies. Models are evaluated using AUC and log loss.</p>
+</section>
+<section id="results" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="results"><span class="header-section-number">6</span> 5. Results</h2>
+<p>The best-performing configuration is the 0.6B model trained end-to-end, achieving competitive results compared to generative CTR baselines, while requiring no feature textualisation.</p>
+</section>
+<section id="conclusion" class="level2" data-number="7">
+<h2 data-number="7" class="anchored" data-anchor-id="conclusion"><span class="header-section-number">7</span> 6. Conclusion</h2>
+<p>This project demonstrates that LLMs can be applied to CTR prediction using dense projected tabular features. The results suggest that dense feature projection is a viable alternative to prompt-based approaches and provides a foundation for future LLM-based recommender systems.</p>
 
 
 </section>

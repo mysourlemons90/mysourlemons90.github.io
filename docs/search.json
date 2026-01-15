@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "temp_website",
+    "title": "Home",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "I’m an Applied Computing (FinTech) student at the Singapore Institute of Technology (SIT).\nI enjoy building practical, data-driven solutions and learning how to communicate technical work clearly."
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,229 @@
     "title": "About",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "data-visualisation.html",
+    "href": "data-visualisation.html",
+    "title": "Data Visualisation",
+    "section": "",
+    "text": "This page demonstrates how quantitative data can be visualised using Quarto and R.\nThe dataset represents the number of online purchases made per month over a six-month period.\n\n\n\nA line chart is used because it clearly shows changes and trends over time."
+  },
+  {
+    "objectID": "data-visualisation.html#sample-monthly-online-purchases",
+    "href": "data-visualisation.html#sample-monthly-online-purchases",
+    "title": "Data Visualisation",
+    "section": "",
+    "text": "This page demonstrates how quantitative data can be visualised using Quarto and R.\nThe dataset represents the number of online purchases made per month over a six-month period.\n\n\n\nA line chart is used because it clearly shows changes and trends over time."
+  },
+  {
+    "objectID": "data-visualisation.html#visualisation",
+    "href": "data-visualisation.html#visualisation",
+    "title": "Data Visualisation",
+    "section": "Visualisation",
+    "text": "Visualisation"
+  },
+  {
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "Home",
+    "section": "",
+    "text": "My name is Kathy Mok and I am an Applied Computing (FinTech) student at Singapore Institute of Technology (SIT).\nThis website was created as part of the AI1001 assessment to demonstrate how to build and publish a personal website using Quarto and GitHub Pages."
+  },
+  {
+    "objectID": "index.html#purpose-of-this-website",
+    "href": "index.html#purpose-of-this-website",
+    "title": "Home",
+    "section": "Purpose of this website",
+    "text": "Purpose of this website\nThe purpose of this website is to: - demonstrate basic Quarto website configuration - create and organise multiple web pages - apply Markdown formatting - publish the website online using GitHub Pages\nUse the navigation bar above to view the other pages."
+  },
+  {
+    "objectID": "fyp.html",
+    "href": "fyp.html",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "",
+    "text": "Large Language Models (LLMs) are effective at reasoning but are not designed for structured tabular data used in click-through rate (CTR) prediction. Existing approaches rely on converting features into text prompts, leading to information loss and context-length constraints. This project proposes a Dense Feature Projection approach inspired by LLaVA, where compressed user features are projected directly into the LLM embedding space as dense tokens. Experiments on the Avazu dataset show that a compact 0.6B LLM achieves competitive CTR performance without textualising input features."
+  },
+  {
+    "objectID": "fyp.html#project-overview",
+    "href": "fyp.html#project-overview",
+    "title": "Project",
+    "section": "",
+    "text": "This page demonstrates how a project page can be structured in a Quarto website.\nThe example topic used here is a Shopee-related project, focusing on organising and analysing e-commerce related information."
+  },
+  {
+    "objectID": "fyp.html#project-objectives",
+    "href": "fyp.html#project-objectives",
+    "title": "Project",
+    "section": "Project objectives",
+    "text": "Project objectives\nThe objectives of this project include: - understanding how data can be organised - applying basic analysis concepts - presenting results clearly in written form"
+  },
+  {
+    "objectID": "fyp.html#what-the-project-involved",
+    "href": "fyp.html#what-the-project-involved",
+    "title": "Project",
+    "section": "What the project involved",
+    "text": "What the project involved\n\nidentifying relevant information such as purchase details and categories\nsummarising information into meaningful groups\nreflecting on the workflow and analysis process"
+  },
+  {
+    "objectID": "fyp.html#key-learning-point",
+    "href": "fyp.html#key-learning-point",
+    "title": "Project",
+    "section": "Key learning point",
+    "text": "Key learning point\nA key learning point from this project is that clear organisation and presentation are just as important as the analysis itself."
+  },
+  {
+    "objectID": "refelction.html",
+    "href": "refelction.html",
+    "title": "Reflection on the use of GenAI",
+    "section": "",
+    "text": "I used Claude as a GenAI tool to support me in completing this assessment."
+  },
+  {
+    "objectID": "refelction.html#genai-tool-used",
+    "href": "refelction.html#genai-tool-used",
+    "title": "Reflection on the use of GenAI",
+    "section": "",
+    "text": "I used Claude as a GenAI tool to support me in completing this assessment."
+  },
+  {
+    "objectID": "refelction.html#how-genai-helped-me",
+    "href": "refelction.html#how-genai-helped-me",
+    "title": "Reflection on the use of GenAI",
+    "section": "How GenAI helped me",
+    "text": "How GenAI helped me\nit helped me understand how to create and configure a Quarto website, including setting up the project structure and rendering pages correctly for GitHub Pages.\nIt was also useful in troubleshooting technical issues related to Git and GitHub, such as resolving push errors."
+  },
+  {
+    "objectID": "refelction.html#benefits-of-using-genai",
+    "href": "refelction.html#benefits-of-using-genai",
+    "title": "Reflection on the use of GenAI",
+    "section": "Benefits of using GenAI",
+    "text": "Benefits of using GenAI\nUsing GenAI reduced the time spent on technical difficulties and helped me focus more on understanding the workflow and requirements of the assessment. It also improved the clarity and organisation of my website content."
+  },
+  {
+    "objectID": "refelction.html#future-use-of-genai",
+    "href": "refelction.html#future-use-of-genai",
+    "title": "Reflection on the use of GenAI",
+    "section": "Future use of GenAI",
+    "text": "Future use of GenAI\nIn the future, I believe GenAI can support my studies and work by assisting with debugging, learning new tools, and improving documentation. However, it should be used responsibly, with careful validation of outputs."
+  },
+  {
+    "objectID": "reflection.html",
+    "href": "reflection.html",
+    "title": "Reflection on the use of GenAI",
+    "section": "",
+    "text": "I used Claude as a GenAI tool to support me in completing this assessment."
+  },
+  {
+    "objectID": "reflection.html#genai-tool-used",
+    "href": "reflection.html#genai-tool-used",
+    "title": "Reflection on the use of GenAI",
+    "section": "",
+    "text": "I used Claude as a GenAI tool to support me in completing this assessment."
+  },
+  {
+    "objectID": "reflection.html#how-genai-helped-me",
+    "href": "reflection.html#how-genai-helped-me",
+    "title": "Reflection on the use of GenAI",
+    "section": "How GenAI helped me",
+    "text": "How GenAI helped me\nit helped me understand how to create and configure a Quarto website, including setting up the project structure and rendering pages correctly for GitHub Pages.\nIt was also useful in troubleshooting technical issues related to Git and GitHub, such as resolving push errors."
+  },
+  {
+    "objectID": "reflection.html#benefits-of-using-genai",
+    "href": "reflection.html#benefits-of-using-genai",
+    "title": "Reflection on the use of GenAI",
+    "section": "Benefits of using GenAI",
+    "text": "Benefits of using GenAI\nUsing GenAI reduced the time spent on technical difficulties and helped me focus more on understanding the workflow and requirements of the assessment. It also improved the clarity and organisation of my website content."
+  },
+  {
+    "objectID": "reflection.html#future-use-of-genai",
+    "href": "reflection.html#future-use-of-genai",
+    "title": "Reflection on the use of GenAI",
+    "section": "Future use of GenAI",
+    "text": "Future use of GenAI\nIn the future, I believe GenAI can support my studies and work by assisting with debugging, learning new tools, and improving documentation. However, it should be used responsibly, with careful validation of outputs."
+  },
+  {
+    "objectID": "data-visualisation.html#story-behind-this-visualisation",
+    "href": "data-visualisation.html#story-behind-this-visualisation",
+    "title": "Data Visualisation",
+    "section": "Story Behind This Visualisation",
+    "text": "Story Behind This Visualisation\nThis visualisation was created as part of a student project analyzing personal spending patterns. The data shows:\n\nHoliday spike in November-December (Black Friday and holiday shopping)\nPost-holiday decline in January (budget recovery)\nStable baseline in August-October (5-8 purchases per month)\n\nThe line chart effectively shows the temporal trend and makes patterns immediately visible."
+  },
+  {
+    "objectID": "data-visualisation.html#data-summary",
+    "href": "data-visualisation.html#data-summary",
+    "title": "Data Visualisation",
+    "section": "Data Summary",
+    "text": "Data Summary\n\n\nTotal Purchases: 55 \n\n\nAverage Monthly Purchases: 9.17 \n\n\nHighest Month: Dec with 15 purchases\n\n\nLowest Month: Aug with 5 purchases"
+  },
+  {
+    "objectID": "fyp.html#abstract",
+    "href": "fyp.html#abstract",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "",
+    "text": "Large Language Models (LLMs) are effective at reasoning but are not designed for structured tabular data used in click-through rate (CTR) prediction. Existing approaches rely on converting features into text prompts, leading to information loss and context-length constraints. This project proposes a Dense Feature Projection approach inspired by LLaVA, where compressed user features are projected directly into the LLM embedding space as dense tokens. Experiments on the Avazu dataset show that a compact 0.6B LLM achieves competitive CTR performance without textualising input features."
+  },
+  {
+    "objectID": "fyp.html#introduction",
+    "href": "fyp.html#introduction",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "2 1. Introduction",
+    "text": "2 1. Introduction\nCTR prediction is a core task in recommender systems. Traditional CTR models handle structured data well but lack reasoning capabilities, while LLMs excel at reasoning but expect text input. Bridging this gap remains a challenge.\n\n2.1 1.1 Problem Statement\nPrompt-based LLM CTR methods suffer from: - Context-length limits that truncate user histories - Weak preservation of feature interactions when using text\n\n\n2.2 1.2 Objectives\nThis project aims to: - Avoid textual conversion of CTR features - Encode features as dense latent representations - Project these representations into the LLM embedding space - Evaluate performance on a standard CTR dataset"
+  },
+  {
+    "objectID": "fyp.html#methodology",
+    "href": "fyp.html#methodology",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "3 2. Methodology",
+    "text": "3 2. Methodology\nUser features are first compressed using an SFG-inspired encoder to capture feature interactions. An MLP projector then maps the compressed features into the LLM embedding space. These projected embeddings are concatenated with a short task prompt and processed by the LLM for CTR prediction."
+  },
+  {
+    "objectID": "fyp.html#dataset",
+    "href": "fyp.html#dataset",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "4 3. Dataset",
+    "text": "4 3. Dataset\nThe Avazu CTR dataset is used. Features are normalised into a fixed schema of 21 categorical fields and a binary click label. Missing values are padded to ensure consistent input dimensions."
+  },
+  {
+    "objectID": "fyp.html#experiments",
+    "href": "fyp.html#experiments",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "5 4. Experiments",
+    "text": "5 4. Experiments\nExperiments are conducted using Qwen LLMs (0.6B and 1.7B parameters) under different training strategies. Models are evaluated using AUC and log loss."
+  },
+  {
+    "objectID": "fyp.html#results",
+    "href": "fyp.html#results",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "6 5. Results",
+    "text": "6 5. Results\nThe best-performing configuration is the 0.6B model trained end-to-end, achieving competitive results compared to generative CTR baselines, while requiring no feature textualisation."
+  },
+  {
+    "objectID": "fyp.html#conclusion",
+    "href": "fyp.html#conclusion",
+    "title": "LLaVA-Inspired Dense Feature Projection for LLM-Based CTR Prediction",
+    "section": "7 6. Conclusion",
+    "text": "7 6. Conclusion\nThis project demonstrates that LLMs can be applied to CTR prediction using dense projected tabular features. The results suggest that dense feature projection is a viable alternative to prompt-based approaches and provides a foundation for future LLM-based recommender systems."
+  },
+  {
+    "objectID": "index.html#hi-im-kathy-mok",
+    "href": "index.html#hi-im-kathy-mok",
+    "title": "Home",
+    "section": "Hi, I’m Kathy Mok",
+    "text": "Hi, I’m Kathy Mok\nI’m an Applied Computing (FinTech) student at the Singapore Institute of Technology (SIT).\nI enjoy building practical, data-driven solutions and learning how to communicate technical work clearly."
+  },
+  {
+    "objectID": "index.html#about-this-site",
+    "href": "index.html#about-this-site",
+    "title": "Home",
+    "section": "About this site",
+    "text": "About this site\nThis website was created for AI1001 to showcase how to build and publish a personal site using Quarto and GitHub Pages."
+  },
+  {
+    "objectID": "index.html#how-to-use-it",
+    "href": "index.html#how-to-use-it",
+    "title": "Home",
+    "section": "How to use it",
+    "text": "How to use it\nUse the navigation bar above to explore the other pages.\nIf you’re viewing this for assessment, you can follow the pages in order to see the build process and outputs."
   }
 ]

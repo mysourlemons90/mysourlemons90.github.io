@@ -1,0 +1,44 @@
+---
+title: "Data Visualisation"
+---
+
+## Sample Monthly Online Purchases
+
+### What is being visualised?
+
+This page demonstrates how **quantitative data** can be visualised using **Quarto and R**.
+
+The dataset represents the number of online purchases made per month over a six-month period.
+
+### Why this visualisation?
+
+A **line chart** is used because it clearly shows changes and trends over time.
+
+------------------------------------------------------------------------
+
+## Visualisation
+
+```{r echo=FALSE, warning=FALSE, fig.width=8, fig.height=5}
+# Sample dataset
+months <- c("Aug", "Sep", "Oct", "Nov", "Dec", "Jan")
+purchases <- c(5, 8, 6, 12, 15, 9)
+
+# Create plot
+plot(1:6, purchases, type="o", pch=16, col="steelblue", lwd=2,
+     xlab="Month", ylab="Number of Purchases", 
+     main="Sample Monthly Online Purchases", xaxt="n", ylim=c(0,17))
+axis(1, at=1:6, labels=months)
+grid(nx=NA, ny=NULL, lty=2, col="gray90")
+```
+
+------------------------------------------------------------------------
+
+## Story Behind This Visualisation
+
+This visualisation was created as part of a student project analyzing personal spending patterns. The data shows:
+
+-   **Holiday spike** in November-December (Black Friday and holiday shopping)
+-   **Post-holiday decline** in January (budget recovery)
+-   **Stable baseline** in August-October (5-8 purchases per month)
+
+The line chart effectively shows the temporal trend and makes patterns immediately visible.
